@@ -63,40 +63,38 @@ main {
 
 
 
-.container {
+.playlist {
   display: grid;
-  text-align: center;
   grid-template-columns: auto auto auto;
   gap: 2rem;
-}
-
-.container article {
-  display: grid;
-  background: var(--clr-dark-1);
   justify-content: center;
-  text-align: center;
-  max-width: 380px;
 }
 
-.container article img {
+.playlist article {
+  display: grid;
+  color: #fff;
+  background: var(--clr-dark-1);
+  max-width: 300px;
+}
+
+.playlist article img {
   object-fit: fill;
   position: relative;
   width: 100%;
-  height: 18rem;
-  border-top-left-radius: var(--radius);
-  border-top-right-radius: var(--radius);
-  margin-bottom: 0.5rem;
+  height: 15rem;
+  margin-bottom: 1rem;
 }
 
-.container article .item-info {
-  margin: 0.5rem;
+
+.playlist article .song-title {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-height: 2rem;
+  height: 2rem;
+  margin: 0.2rem;
 }
 
-.item-info span {
+.song-title span {
   padding: 4px 1rem;
   text-align: center;
   display: block;
@@ -107,10 +105,28 @@ main {
   border-width: 1px;
 }
 
-.item-info h4 {
+.song-title h4 {
   font-weight: 500;
   font-size: medium;
+  color: var(--clr-yellow-2);
 }
+
+.playlist article .song-info {
+  display:contents;
+  text-align: left;
+}
+
+.song-info h4{
+  margin: 0.2rem;
+  font-weight: 500;
+}
+.song-info p {
+  margin: 0.2rem;
+  font-weight: 300;
+  color: var(--clr-gray-1);
+}
+
+
 
 h1 {
   font-size: 3rem;

@@ -1,9 +1,21 @@
 import React from 'react'
 
-const Genres = () => {
-  return (
-    <div> <h3>Genres</h3> </div>
-  )
-}
+const Genres = ({genres, filterSongs}) => {
+    return (
+        <div className='btn-container'>
+            {genres.map((genre) => {
+                return(
+                    <button 
+                    type='button' 
+                    onClick={() => filterSongs(genre)}
+                    >
+                        {genre}
+                    </button>
+                )
+            })}
+            
+        </div>
+    );
+};
 
-export default Genres 
+export default Genres; 
