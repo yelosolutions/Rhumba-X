@@ -27,9 +27,11 @@ function App() {
 
   return (
     <main>
-      <h2>RhumbaX Music</h2>
-      <h3>Genres</h3>
-
+      <div className="title">
+        <h3>RhumbaX</h3>
+        <div className="underline"></div>
+      </div>
+      
       {/* components */}
       <Genres genres={genres} filterSongs={filterSongs} />
       <Playlist songs={playlistSongs}/>
